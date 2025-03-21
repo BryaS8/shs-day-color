@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.day-display {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.red { 
+    background-color: #ffebee; 
+    color: #c62828; 
+}
+
+.blue { 
+    background-color: #e3f2fd; 
+    color: #1565c0; 
+}
+
+.unknown { 
+    background-color: #f5f5f5; 
+    color: #616161; 
+}
+
+.alarm-time {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#countdown {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.notification-status {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .day-display {
+        font-size: 20px;
+        padding: 15px;
+    }
+} 
